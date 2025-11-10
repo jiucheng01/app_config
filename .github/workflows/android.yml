@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +24,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build assembleRelease
     - name: Upload Release artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4  # 升级为 v4
       with:
         name: release
         path: app/build/outputs/apk/release/*
