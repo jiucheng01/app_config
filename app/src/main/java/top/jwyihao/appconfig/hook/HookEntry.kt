@@ -90,7 +90,7 @@ class HookEntry : IYukiHookXposedInit {
                             )
 
                             XmlPullParser.START_TAG -> {
-                                //获得解析器当前元素的名称
+                                //获得解析器当前元素的名称 
                                 val tagName = parser.name
                                 //如果当前标签名称是 <config>
                                 if ("config" == tagName) {
