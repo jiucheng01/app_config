@@ -25,7 +25,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build assembleRelease
     - name: Upload Release artifact
-      uses: actions/upload-artifact@v4  # 这里更新为 v4
+      uses: actions/upload-artifact@v2
       with:
         name: release
         path: app/build/outputs/apk/release/*
