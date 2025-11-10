@@ -232,11 +232,6 @@ class HookEntry : IYukiHookXposedInit {
                     try {
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                             if (mainProcessName == getProcessName()) {
-                                Toast.makeText(
-                                    appContext,
-                                    "「应用配置」运行中\r\n该配置由「${config.author}」提供",
-                                    Toast.LENGTH_SHORT
-                                ).show()
                                 YLog.debug(
                                     msg = "「应用配置」运行中，当前配置由「${config.author}」提供",
                                     tag = YLog.Configs.tag
